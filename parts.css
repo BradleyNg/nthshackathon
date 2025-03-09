@@ -1,0 +1,208 @@
+/* Parts Page Specific Styles */
+
+.parts-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.parts-header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+}
+
+.parts-header p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.search-section {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--shadow);
+    margin: 0 30px 30px 30px;
+    border: 1px solid var(--border-color);
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-group label {
+    font-weight: 500;
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+}
+
+.filter-group select {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    font-size: 0.9rem;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Parts Table Styles */
+.parts-section {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--shadow);
+    margin: 0 30px;
+    border: 1px solid var(--border-color);
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+#parts-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+#parts-table th, #parts-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#parts-table th {
+    background-color: rgba(76, 175, 80, 0.1);
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+#parts-table tbody tr:hover {
+    background-color: rgba(76, 175, 80, 0.05);
+}
+
+.sortable {
+    cursor: pointer;
+    position: relative;
+}
+
+.sortable:after {
+    content: '↕';
+    position: absolute;
+    right: 8px;
+    color: var(--primary-dark);
+    opacity: 0.5;
+}
+
+.sortable.asc:after {
+    content: '↑';
+    opacity: 1;
+}
+
+.sortable.desc:after {
+    content: '↓';
+    opacity: 1;
+}
+
+.part-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.vendor-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.vendor-link:hover {
+    text-decoration: underline;
+}
+
+.price {
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: var(--white);
+    border: 1px solid var(--primary-light);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+#page-info {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+#no-results {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-light);
+}
+
+.back-link {
+    margin-top: 30px;
+    text-align: center;
+}

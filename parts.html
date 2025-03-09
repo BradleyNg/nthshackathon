@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Reduction - Replacement Parts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="parts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>E-Waste Reduction Assistant</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="parts-header">
+            <h1>Replacement Parts Finder</h1>
+            <p>Find the right parts for your device repair</p>
+        </section>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for parts...">
+                <button id="search-btn" class="primary-btn">Refresh</button>
+            </div>
+            <!-- <div class="filter-options">
+                <div class="filter-group">
+                    <label for="filter-vendor">Stars:</label>
+                    <select id="filter-vendor">
+                        <option value="all">All Vendors</option>
+                        <option value="official">Official Parts</option>
+                        <option value="third-party">Third Party</option>
+                    </select>
+                </div>
+            </div> -->
+        </section>
+
+        <section class="parts-section">
+            <h2 id="parts-heading">Available Replacement Parts</h2>
+            <div class="table-container">
+                <table id="parts-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable" data-sort="image">Image</th>
+                            <th class="sortable" data-sort="part">Part</th>
+                            <th class="sortable" data-sort="name">Part Name</th>
+                            <th class="sortable" data-sort="link">Link</th>
+                            <th class="sortable" data-sort="vendor">Vendor</th>
+                            <th class="sortable" data-sort="stars">Stars</th>
+                            <th class="sortable" data-sort="price">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="parts-table-body">
+                        <!-- Table rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="no-results" class="hidden">
+                <p>No parts found matching your search criteria.</p>
+            </div>
+            <!-- <div class="pagination">
+                <button id="prev-page" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                <span id="page-info">Page 1 of 1</span>
+                <button id="next-page" disabled>Next <i class="fas fa-chevron-right"></i></button>
+            </div> -->
+        </section>
+
+        <div class="back-link">
+            <a href="index.html" class="secondary-btn"><i class="fas fa-arrow-left"></i> Back to Analysis</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 E-Waste Reduction Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="parts.js" defer></script>
+</body>
+</html>

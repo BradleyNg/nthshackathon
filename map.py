@@ -3,7 +3,7 @@ import requests
 import geocoder
 import pandas as pd
 
-API_KEY = "ae0444450b674e53904e754317ba48ec4f5ce650fdcb0ca1a0fe20a1d36f3948"
+API_KEY = ""
 
 def get_user_location():
     g = geocoder.ip("me")  

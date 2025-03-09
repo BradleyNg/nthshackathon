@@ -1,4 +1,4 @@
-GEMINI_API_KEY = "AIzaSyCrM-SEYi0QLGQWiXpwzo3auDUKU_Qopyw"
+GEMINI_API_KEY = ""
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 import os
@@ -15,8 +15,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 from serpapi import GoogleSearch
 
-PROJECT_ID = "sunny-buttress-453119-g6"  
-LOCATION = "us-central1"  
+PROJECT_ID = ""  
+LOCATION = ""  
 
 textThing = ""
 
@@ -117,7 +117,7 @@ async def amazonQuerier(keyword :str):
     params = {
     "engine": "google_shopping",
     "q": keyword,
-    "api_key": "ae0444450b674e53904e754317ba48ec4f5ce650fdcb0ca1a0fe20a1d36f3948"
+    "api_key": ""
     }
 
     search = GoogleSearch(params)

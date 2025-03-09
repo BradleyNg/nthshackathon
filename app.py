@@ -6,7 +6,7 @@ import pandas as pd
 # FastAPI endpoint
 API_URL = "http://127.0.0.1:8000/caption_image"
 # SerpAPI key
-API_KEY = "ae0444450b674e53904e754317ba48ec4f5ce650fdcb0ca1a0fe20a1d36f3948"
+API_KEY = ""
 
 # Initialize session state for storing results
 if "analysis_results" not in st.session_state:
